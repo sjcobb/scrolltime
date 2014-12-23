@@ -30,9 +30,10 @@
         <div id="offset">10</div>
 
         <header 
-            data-0="opacity: 1"
-            data-400="opacity: 0"
-        > <!-- relative position version: data-top="opacity: 1" data--400-top="opacity: 0" -->
+
+        > 
+        <!-- absolute position version: data-0="opacity: 1" data-400="opacity: 0" -->
+        <!-- relative position version: data-top="opacity: 1" data--400-top="opacity: 0" -->
             <div class="wrapper clearfix">
 
                 <h1 class="title">Parallax Scrolling Master Class</h1>
@@ -78,7 +79,11 @@
             <div id="boxingRing">
                 <div class="wrapper clearfix">
 
-                    <div id="stage"></div>
+                    <div id="stage"
+                        data-anchor-target="#boxingRing";
+                        data-bottom-top="transform[swing]: scale(0.5) rotate(120deg)";
+                        data-top="transform[swing]: scale(1) rotate(0)";
+                    ></div>
 
                 </div>
             </div>
